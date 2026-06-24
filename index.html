@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 flex items-center justify-center min-h-screen"> 
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
+        <h1 class="text-3xl font-bold text-center mb-6">Login</h1>
+    
+        <form id="loginForm" class="space-y-4">
+            <input type="text" id="username" placeholder="username" class="w-full border p-3 rounded-lg">
+            <input type="password" id="password" placeholder="password" class="w-[90%] border  p-3 rounded-lg">
+            <button class="w-full  bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">logn</button>
+            <!-- <input type="checkbox" id="show" class="p-3 rounded-lg"> -->
+        </form>
+        <p id="error" class="text-red-600 text-center mt-3"></p>
+    </div>
+
+
+    <script src="login.js"></script>
+</body>
+</html>
