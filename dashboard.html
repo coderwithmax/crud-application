@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-200">
+   <div class="max-w-7xl max-auto p-5 justify-center m-auto">
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold">CRUD Application</h1>
+        <button id="logout" class="bg-red-600 text-white px-4 py-2 rounded">Logout</button>
+    </div>
+    <div class="bg-white p-6 rouned-xl shadow">
+         <form id="userForm" class="grid md:grid-cols-2 gap-4">
+        <input type="hidden" id="editIndex">
+        <input type="text" id="fullname" class="border p-3 rounded-lg" placeholder="FullName">
+        <input type="number" id="age" placeholder="enter your age" class="border p-3 rounded-lg">
+        <select id="gender" class="border p-3 rounded-lg">
+            <option>choose your gender</option>
+            <option>male</option>
+            <option>female</option>
+        </select>
+        <input type="text" maxlength="10" id="phone" placeholder="00000000000" class="border p-3 rounded-lg">
+        <input type="text" placeholder="city" id="city" class="border p-3 rounded-lg">
+        <input type="text" id="fariin" placeholder="fadlan fariin reeb" class="border p-3 rounded-lg">
+        <button class="bg-blue-600 text-white py-3 rounded-lg md:col-span-2"> add</button>
+    </form>
+
+    <!-- message  -->
+     <p id="message" class="mt-4 text-red-500 text-center"></p>
+    </div>
+     <div class="bg-white mt-8 rounded-xl shadow overflow-auto">
+        <table class="w-full">
+        <thead class="bg-slate-800 text-white">
+            <tr>
+                <th class="p-3">ID</th>
+                <th class="p-3">FullName</th>
+                <th class="p-3">Age</th>
+                <th class="p-3">Gender</th>
+                <th class="p-3">Phone</th>
+                <th class="p-3">City</th>
+                <th class="p-3">Fariin</th>
+                <th class="p-3">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+     </div>
+   </div>
+
+     <script src="dashboard.js"></script>
+</body>
+</html>
+
+
